@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   FiSearch,
   FiMenu,
@@ -11,11 +11,14 @@ import {
   FiTool,
 } from "react-icons/fi";
 import { FaTools, FaUserCircle } from "react-icons/fa";
+import BookingModal from "../BookingModal/BookingModal";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const location = useLocation();
 
   // Handle scroll effect
   useEffect(() => {
@@ -27,7 +30,7 @@ function Header() {
   }, []);
 
   const navItems = [
-    { name: "Trang chủ", href: "/", active: true },
+    { name: "Trang chủ", href: "/" },
     { name: "Dịch vụ", href: "/services" },
     { name: "Đặt lịch", href: "/booking", highlight: true },
     { name: "Giới thiệu", href: "/about" },
@@ -77,7 +80,9 @@ function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center group cursor-pointer">
+            <Link
+              to="/"
+              className="flex-shrink-0 flex items-center group cursor-pointer">
               <div className="flex items-center gap-3">
                 <div className="relative">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300">
@@ -97,38 +102,41 @@ function Header() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Navigation Menu - Desktop */}
             <nav className="hidden lg:flex items-center space-x-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={`
-                    relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200
-                    ${
-                      item.active
-                        ? "text-blue-600"
-                        : "text-gray-700 hover:text-blue-600"
-                    }
-                    ${
-                      item.highlight
-                        ? "bg-blue-50 hover:bg-blue-100"
-                        : "hover:bg-gray-50"
-                    }
-                    group
-                  `}>
-                  {item.name}
-                  {item.highlight && (
-                    <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                  )}
-                  <span
-                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 ${
-                      item.active ? "w-3/4" : ""
-                    }`}></span>
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`
+                      relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200
+                      ${
+                        isActive
+                          ? "text-blue-600"
+                          : "text-gray-700 hover:text-blue-600"
+                      }
+                      ${
+                        item.highlight
+                          ? "bg-blue-50 hover:bg-blue-100"
+                          : "hover:bg-gray-50"
+                      }
+                      group
+                    `}>
+                    {item.name}
+                    {item.highlight && (
+                      <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                    )}
+                    <span
+                      className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 ${
+                        isActive ? "w-3/4" : ""
+                      }`}></span>
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Right Section */}
@@ -185,7 +193,9 @@ function Header() {
                   <FaUserCircle className="mr-2 text-lg" />
                   Đăng nhập
                 </Link>
-                <button className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg">
+                <button
+                  onClick={() => setIsBookingModalOpen(true)}
+                  className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg">
                   Đặt lịch ngay
                 </button>
               </div>
@@ -232,25 +242,29 @@ function Header() {
 
             {/* Mobile Navigation */}
             <nav className="mt-8 space-y-2">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={`
-                    block px-4 py-3 rounded-lg font-medium transition-all duration-200
-                    ${
-                      item.active
-                        ? "bg-blue-50 text-blue-600"
-                        : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
-                    }
-                    ${item.highlight ? "relative" : ""}
-                  `}>
-                  {item.name}
-                  {item.highlight && (
-                    <span className="absolute top-3 right-4 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                  )}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`
+                      block px-4 py-3 rounded-lg font-medium transition-all duration-200
+                      ${
+                        isActive
+                          ? "bg-blue-50 text-blue-600"
+                          : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                      }
+                      ${item.highlight ? "relative" : ""}
+                    `}
+                    onClick={() => setIsMenuOpen(false)}>
+                    {item.name}
+                    {item.highlight && (
+                      <span className="absolute top-3 right-4 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                    )}
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Mobile Actions */}
@@ -282,6 +296,12 @@ function Header() {
           </div>
         </div>
       </div>
+
+      {/* Booking Modal */}
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </>
   );
 }
