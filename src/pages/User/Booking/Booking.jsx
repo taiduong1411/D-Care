@@ -627,7 +627,7 @@ function Booking() {
                   Đặt lịch thành công!
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Cảm ơn bạn đã tin tưởng DCare. Chúng tôi sẽ liên hệ với bạn
+                  Cảm ơn bạn đã tin tưởng KCare. Chúng tôi sẽ liên hệ với bạn
                   trong thời gian sớm nhất.
                 </p>
 
@@ -679,7 +679,7 @@ function Booking() {
                         1
                       </div>
                       <p className="text-gray-700">
-                        Nhân viên DCare sẽ gọi xác nhận lịch hẹn trong vòng 30
+                        Nhân viên KCare sẽ gọi xác nhận lịch hẹn trong vòng 30
                         phút
                       </p>
                     </div>

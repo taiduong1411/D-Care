@@ -80,7 +80,7 @@ function Register() {
               Đăng ký tài khoản
             </h2>
             <p className="mt-2 text-sm text-gray-600">
-              Tham gia DCare để nhận nhiều ưu đãi
+              Tham gia KCare để nhận nhiều ưu đãi
             </p>
           </div>
 

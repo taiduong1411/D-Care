@@ -71,8 +71,8 @@ function Contact() {
     {
       icon: <FiMail className="text-2xl" />,
       title: "Email",
-      content: "contact@dcare.vn",
-      subContent: "support@dcare.vn",
+      content: "contact@kcare.vn",
+      subContent: "support@kcare.vn",
       color: "from-green-400 to-green-600",
     },
     {
@@ -104,7 +104,7 @@ function Contact() {
 
   const faqs = [
     {
-      question: "DCare phục vụ ở những khu vực nào?",
+      question: "KCare phục vụ ở những khu vực nào?",
       answer:
         "Chúng tôi hiện phục vụ tại TP.HCM và các tỉnh lân cận như Bình Dương, Đồng Nai, Long An. Đang mở rộng thêm các khu vực khác.",
     },
@@ -124,7 +124,7 @@ function Contact() {
         "Chúng tôi bảo hành từ 3-12 tháng tùy theo dịch vụ. Linh kiện chính hãng được bảo hành theo quy định của nhà sản xuất.",
     },
     {
-      question: "Làm sao để trở thành kỹ thuật viên DCare?",
+      question: "Làm sao để trở thành kỹ thuật viên KCare?",
       answer:
         "Bạn có thể đăng ký qua trang 'Đăng ký kỹ thuật viên' hoặc liên hệ hotline. Yêu cầu: có chuyên môn, kinh nghiệm và các giấy tờ liên quan.",
     },
@@ -173,7 +173,7 @@ function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Liên hệ với <span className="text-blue-600">DCare</span>
+              Liên hệ với <span className="text-blue-600">KCare</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7
@@ -366,7 +366,7 @@ function Contact() {
               Kết nối với chúng tôi
             </h2>
             <p className="text-lg text-gray-600">
-              Theo dõi DCare trên các mạng xã hội để cập nhật tin tức mới nhất
+              Theo dõi KCare trên các mạng xã hội để cập nhật tin tức mới nhất
             </p>
           </div>
           <div

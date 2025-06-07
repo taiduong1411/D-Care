@@ -77,7 +77,7 @@ function About() {
   const milestones = [
     {
       year: "2019",
-      title: "Thành lập DCare",
+      title: "Thành lập KCare",
       description: "Khởi đầu với 5 kỹ thuật viên tại TP.HCM",
       icon: "🚀",
     },
@@ -157,7 +157,7 @@ function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Về <span className="text-blue-600">DCare</span>
+              Về <span className="text-blue-600">KCare</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Nền tảng kết nối khách hàng với kỹ thuật viên chuyên nghiệp, mang
@@ -178,7 +178,7 @@ function About() {
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Sứ mệnh</h2>
               <p className="text-gray-700 leading-relaxed">
-                DCare ra đời với sứ mệnh mang đến giải pháp bảo trì, sửa chữa
+                KCare ra đời với sứ mệnh mang đến giải pháp bảo trì, sửa chữa
                 thiết bị gia dụng tiện lợi, nhanh chóng và đáng tin cậy cho mọi
                 gia đình Việt Nam. Chúng tôi kết nối khách hàng với đội ngũ kỹ
                 thuật viên chuyên nghiệp, đảm bảo dịch vụ chất lượng cao với giá
@@ -212,7 +212,7 @@ function About() {
               Giá trị cốt lõi
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              6 giá trị cốt lõi định hướng mọi hoạt động của DCare
+              6 giá trị cốt lõi định hướng mọi hoạt động của KCare
             </p>
           </div>
 
@@ -265,7 +265,7 @@ function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              DCare hoạt động như thế nào?
+              KCare hoạt động như thế nào?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Mô hình kết nối 2 chiều giữa khách hàng và kỹ thuật viên
@@ -408,7 +408,7 @@ function About() {
               Đội ngũ lãnh đạo
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những người sáng lập và điều hành DCare
+              Những người sáng lập và điều hành KCare
             </p>
           </div>
 
@@ -494,7 +494,7 @@ function About() {
           className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8"
           data-aos="zoom-in">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Cùng DCare xây dựng tương lai
+            Cùng KCare xây dựng tương lai
           </h2>
           <p className="text-lg text-gray-600 mb-8">
             Hãy tham gia cùng chúng tôi để mang dịch vụ chất lượng đến mọi gia

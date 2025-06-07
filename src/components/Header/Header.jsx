@@ -94,7 +94,7 @@ function Header() {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold">
-                    <span className="text-gray-800">D</span>
+                    <span className="text-gray-800">K</span>
                     <span className="text-blue-600">Care</span>
                   </h1>
                   <p className="text-xs text-gray-500 -mt-1">

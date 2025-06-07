@@ -16,7 +16,7 @@ export const mockTestimonials = [
     name: "Anh Trần Văn Minh",
     location: "Quận 7, TP.HCM",
     content:
-      "Tủ lạnh nhà tôi bị hỏng vào cuối tuần, gọi DCare và được hỗ trợ ngay. Giá cả hợp lý, thợ có tay nghề cao.",
+      "Tủ lạnh nhà tôi bị hỏng vào cuối tuần, gọi KCare và được hỗ trợ ngay. Giá cả hợp lý, thợ có tay nghề cao.",
     rating: 5,
     service: "Sửa tủ lạnh",
     serviceId: 2,
@@ -76,7 +76,7 @@ export const mockTestimonials = [
     name: "Chị Nguyễn Thị Hồng",
     location: "Quận 5, TP.HCM",
     content:
-      "Máy nước nóng được bảo dưỡng định kỳ, giờ hoạt động tốt và tiết kiệm điện hơn trước. Cảm ơn DCare!",
+      "Máy nước nóng được bảo dưỡng định kỳ, giờ hoạt động tốt và tiết kiệm điện hơn trước. Cảm ơn KCare!",
     rating: 5,
     service: "Bảo trì máy nước nóng",
     serviceId: 5,

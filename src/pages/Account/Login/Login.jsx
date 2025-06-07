@@ -66,7 +66,7 @@ function Login() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900">Đăng nhập</h2>
             <p className="mt-2 text-sm text-gray-600">
-              Chào mừng bạn trở lại với DCare
+              Chào mừng bạn trở lại với KCare
             </p>
           </div>
 

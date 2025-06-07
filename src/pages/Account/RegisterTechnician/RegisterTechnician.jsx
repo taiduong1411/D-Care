@@ -153,7 +153,7 @@ function RegisterTechnician() {
                 Đăng ký làm Kỹ thuật viên
               </h2>
               <p className="mt-2 text-sm text-gray-600">
-                Gia nhập đội ngũ kỹ thuật viên DCare và kiếm thu nhập hấp dẫn
+                Gia nhập đội ngũ kỹ thuật viên KCare và kiếm thu nhập hấp dẫn
               </p>
             </div>
 
@@ -591,7 +591,7 @@ function RegisterTechnician() {
                     className="text-blue-600 hover:text-blue-700 underline">
                     chính sách hoa hồng
                   </Link>{" "}
-                  của DCare
+                  của KCare
                 </label>
               </div>
 

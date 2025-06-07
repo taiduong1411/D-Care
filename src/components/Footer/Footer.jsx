@@ -106,7 +106,7 @@ function Footer() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">
-                    <span className="text-gray-800">D</span>
+                    <span className="text-gray-800">K</span>
                     <span className="text-blue-600">Care</span>
                   </h3>
                   <p className="text-xs text-gray-500">
@@ -284,9 +284,9 @@ function Footer() {
                 <div>
                   <p className="font-medium text-gray-800">Email:</p>
                   <a
-                    href="mailto:support@dcare.vn"
+                    href="mailto:support@kcare.vn"
                     className="text-gray-600 text-sm hover:text-blue-600">
-                    support@dcare.vn
+                    support@kcare.vn
                   </a>
                 </div>
               </div>
@@ -373,7 +373,7 @@ function Footer() {
       <div className="bg-gray-900 text-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>© {currentYear} DCare. Tất cả quyền được bảo lưu.</p>
+            <p>© {currentYear} KCare. Tất cả quyền được bảo lưu.</p>
             <p className="text-gray-400">
               Dịch vụ chăm sóc thiết bị điện gia đình tại nhà uy tín nhất
             </p>

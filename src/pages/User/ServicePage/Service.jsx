@@ -336,7 +336,7 @@ function Service() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Dịch vụ của <span className="text-blue-600">DCare</span>
+              Dịch vụ của <span className="text-blue-600">KCare</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Đa dạng dịch vụ sửa chữa và bảo trì thiết bị gia dụng tại nhà với
@@ -536,7 +536,7 @@ function Service() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Tại sao chọn dịch vụ của DCare?
+                Tại sao chọn dịch vụ của KCare?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -647,7 +647,7 @@ function Service() {
             Cần sửa chữa ngay? Chúng tôi sẵn sàng!
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Đội ngũ kỹ thuật viên DCare luôn sẵn sàng phục vụ bạn 24/7
+            Đội ngũ kỹ thuật viên KCare luôn sẵn sàng phục vụ bạn 24/7
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-2">

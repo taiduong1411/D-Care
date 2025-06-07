@@ -40,6 +40,7 @@ import {
 } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import BrandPartners from "../../../components/BrandPartners/BrandPartners";
 
 // Import mock data
 import { getPopularServices } from "../../../mocks/services";
@@ -160,33 +161,6 @@ function Home() {
         "Quản lý riêng",
       ],
       recommended: false,
-    },
-  ];
-
-  const brandPartners = [
-    {
-      name: "Daikin",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Daikin-logo.svg",
-    },
-    {
-      name: "Panasonic",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/26/Panasonic_logo_%28Blue%29.svg",
-    },
-    {
-      name: "Samsung",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg",
-    },
-    {
-      name: "LG",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/LG_logo_%282015%29.svg",
-    },
-    {
-      name: "Toshiba",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/01/Toshiba_logo.svg",
-    },
-    {
-      name: "Electrolux",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/80/Electrolux_logo.svg",
     },
   ];
 
@@ -407,7 +381,7 @@ function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Tại sao chọn DCare?
+                Tại sao chọn KCare?
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -606,33 +580,7 @@ function Home() {
       </section>
 
       {/* Brand Partners Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12" data-aos="fade-up">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Đối tác thương hiệu
-            </h3>
-            <p className="text-gray-600">
-              Chúng tôi là đối tác dịch vụ ủy quyền của các thương hiệu hàng đầu
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {brandPartners.map((brand, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24"
-                data-aos="zoom-in"
-                data-aos-delay={index * 50}>
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="max-h-12 w-auto filter grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BrandPartners />
 
       {/* Stats Section - Enhanced */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
@@ -828,11 +776,11 @@ function Home() {
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Trở thành <span className="text-orange-600">Kỹ thuật viên</span>{" "}
-                DCare
+                KCare
               </h2>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Gia nhập đội ngũ kỹ thuật viên chuyên nghiệp của DCare. Nhận
+                Gia nhập đội ngũ kỹ thuật viên chuyên nghiệp của KCare. Nhận
                 công việc linh hoạt, thu nhập hấp dẫn lên đến 20 triệu/tháng.
               </p>
 
@@ -924,7 +872,7 @@ function Home() {
             Cần hỗ trợ ngay? Chúng tôi luôn sẵn sàng!
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Đội ngũ tư vấn viên và kỹ thuật viên DCare phục vụ 24/7
+            Đội ngũ tư vấn viên và kỹ thuật viên KCare phục vụ 24/7
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
